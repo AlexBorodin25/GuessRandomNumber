@@ -30,3 +30,16 @@ def play_game():
             print("Correct!")
             print("It took you {guesses} guesses.")
             break
+
+def main():
+    while True:
+        play_game()
+
+        play_again = input("\nWould you like to play again? (y/n): ")
+        if play_again == "y":
+            play_game()
+        else:
+            print("Thank you for playing!")
+
+if __name__ == "__main__":
+    main()
