@@ -53,10 +53,9 @@ def main():
     while True:
         play_game()
 
-        play_again = input("\nWould you like to play again? (y/n): ")
-        if play_again == "y":
-            play_game()
-        else:
+        play_again = input("\nWould you like to play again? (y/n): ").strip().lower()
+
+        if play_again != "y":
             print("Thank you for playing!")
             break
 
